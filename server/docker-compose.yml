@@ -1,8 +1,8 @@
 version: '2'
 services:
   frps:
-    image: chaoyuechen/frps:latest
-    command: /app/frp/frps -c /app/frp/frps.ini
+    image: chaoyuechen/docker-alpine-frp:latest
+    command: frps -c /etc/frps.ini
     ports:
       - 7000:7000
       - 7500:7500
@@ -13,5 +13,5 @@ services:
       - 50005:50005
     restart: always
     volumes:
-      - ./frps.ini:/app/frp/frps.ini
-      - ./frps.log:/app/frp/frps.log
+      - ./frps.ini:/etc/frps.ini
+      - ./frps.log:/etc/frps.log
