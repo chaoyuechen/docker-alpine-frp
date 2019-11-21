@@ -10,5 +10,5 @@ RUN tar -zxvf frp_${FRP_VERSION}_linux_amd64.tar.gz \
     && mv frp_${FRP_VERSION}_linux_amd64/frps /usr/local/bin \
     && rm -rf frp_${FRP_VERSION}_linux_amd64 frp_${FRP_VERSION}_linux_amd64.tar.gz
  
-EXPOSE 7000 7500 50001 50002 50003 50004 50005
+EXPOSE 7000 7500
 CMD ["frps","-c","/etc/frps.ini"]
