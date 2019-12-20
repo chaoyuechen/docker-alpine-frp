@@ -1,7 +1,7 @@
 # docker-alpine-frp
 frp在alpine下制作的docker镜像，镜像大小不到20M
 
-当前frp版本0.27.0
+当前frp版本0.30.0
 
 ## 服务器端
 服务器端安装好docker和docker-compose环境
@@ -16,6 +16,6 @@ $ docker-compose up -d
 
 ## 开放端口
 ```
-7000 7500 50001 50002 50003 50004 50005
+7000 7500
 ```
 
